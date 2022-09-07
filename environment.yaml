@@ -1,0 +1,7 @@
+name: vodf-docs
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - sphinx
+  - pydata-sphinx-theme
