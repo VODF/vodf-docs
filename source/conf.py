@@ -1,3 +1,4 @@
+import os
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -32,7 +33,7 @@ release = '0.1'
 # ones.
 extensions = [
     "sphinx.ext.mathjax",
-    "sphinx_panels",
+    #"sphinx_panels",
     
 ]
 
@@ -51,6 +52,22 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'pydata_sphinx_theme'
+
+json_url = "https://github.com/vodf/vodf-docs/tree/main/source/_static/switcher.json"
+
+# Define the version we use for matching in the version switcher.
+version_match = os.environ.get("READTHEDOCS_VERSION")
+# If READTHEDOCS_VERSION doesn't exist, we're not on RTD
+# If it is an integer, we're in a PR build and the version isn't correct.
+if not version_match or version_match.isdigit():
+    # For local development, infer the version to match from the package.
+    if "dev" in release:
+        version_match = "latest"
+        # We want to keep the relative reference if we are in dev mode
+        # but we want the whole url if we are effectively in a released version
+        json_url = "/_static/switcher.json"
+    else:
+        version_match = "v" + release
 
 html_theme_options = {
     # "logo_link": "",
