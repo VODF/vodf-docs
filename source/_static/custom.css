@@ -1,0 +1,13 @@
+:root {
+    --pst-font-family-base: "Fira Sans", var(--pst-font-family-base-system);
+    --pst-font-family-heading: "Fira Sans", Cambria, Georgia, Times, var(--pst-font-family-base-system);
+
+}
+
+html[data-theme="light"] {
+    --pst-color-primary: #8800ff;
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: #8800ff;
+}

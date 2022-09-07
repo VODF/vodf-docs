@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-VODF - the Very-high-energy Open Data Format
+VODF: *Very-high-energy Open Data Format*
 ============================================
 
 An open data model and format for Very-High-Energy (VHE) astronomy.
@@ -24,8 +24,8 @@ The VODF working group contains members from the following astronomincal telesco
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Data Models
 
    event_lists
    irfs
