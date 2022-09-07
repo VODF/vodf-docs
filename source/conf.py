@@ -1,4 +1,5 @@
 import os
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -18,12 +19,12 @@ import os
 
 # -- Project information -----------------------------------------------------
 
-project = 'VODF'
-copyright = '2022, VODF Working Group'
-author = 'VODF Working Group'
+project = "VODF"
+copyright = "2022, VODF Working Group"
+author = "VODF Working Group"
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = "0.1"
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,12 +34,11 @@ release = '0.1'
 # ones.
 extensions = [
     "sphinx.ext.mathjax",
-    #"sphinx_panels",
-    
+    # "sphinx_panels",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -51,7 +51,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 
 json_url = "https://github.com/vodf/vodf-docs/tree/main/source/_static/switcher.json"
 
@@ -82,8 +82,7 @@ html_theme_options = {
         "json_url": json_url,
         "version_match": version_match,
     },
-    "default_mode": "auto",
-    #"announcement": "<p>Test version</p>",
+    # "announcement": "<p>Test version</p>",
 }
 
 html_context = {
@@ -94,8 +93,7 @@ html_context = {
 }
 
 
-
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
