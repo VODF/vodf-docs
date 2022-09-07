@@ -96,7 +96,7 @@ html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
 ]
-html_logo = "_static/VODF-logo.png"
+html_logo = "_static/VODF-logo.svg"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,

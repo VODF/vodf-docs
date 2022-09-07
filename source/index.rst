@@ -4,9 +4,10 @@
    contain the root `toctree` directive.
 
 
-.. image:: _static/VODF-logo.png
+.. image:: _static/VODF-logo.svg
    :align: center
    :width: 600px
+   :alt: VODF: The Very-high-energy Open Data Format
 
 
 The *Very-high-energy Open Data Format*, VODF, is an open data model and format
