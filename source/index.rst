@@ -3,8 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to VODF's documentation!
-================================
+VODF - the Very-high-energy Open Data Format
+============================================
+
+An open data model and format for Very-High-Energy (VHE) astronomy.
+
+
+What is VODF?
+-------------
+
+The VODF Working group
+-----------------------
+
+The VODF working group contains members from the following astronomincal telescopes and observatories:
+
+- **CTAO**  - Cherenkov Telescope Array Observatory
+- **HAWC** - High-Energy Water Cherenkov telescope
+- **KM3NeT** - The Cubic Kilometre Neutrino Telescope
+- ...
+
 
 .. toctree::
    :maxdepth: 2
