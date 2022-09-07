@@ -30,3 +30,4 @@ The VODF working group contains members from the following astronomincal telesco
    event_lists
    irfs
    metadata
+   observation_tables
