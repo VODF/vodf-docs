@@ -82,13 +82,15 @@ html_theme_options = {
         "json_url": json_url,
         "version_match": version_match,
     },
+    "default_mode": "auto",
+    #"announcement": "<p>Test version</p>",
 }
 
 html_context = {
-    "github_user": "https://github.com/vodf",
-    "github_repo": "https://github.com/vodf/vodf-docs",
+    "github_user": "vodf",
+    "github_repo": "vodf-docs",
     "github_version": "main",
-    "doc_path": ".",
+    "doc_path": "source",
 }
 
 
