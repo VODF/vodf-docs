@@ -1,14 +1,13 @@
-Context
-=======
+=========
+ Context
+=========
 
 sljhdf slkdjf lksjf lsjdfl jsfkjh isb isfi sdf iusdfhisdfuh sudhfi ushdf iushdfi
 ushdf iuhsifh siufdhi sudhfi ush
 
-Management
-^^^^^^^^^^
 
 VODF Steering committee
------------------------
+=======================
 
 .. list-table:: Steering Committee
    :header-rows: 1
@@ -52,7 +51,7 @@ VODF Steering committee
      - Amanda Weinstein
 
 VODF Lead Editors
-------------------
+=================
 
 * Kosack, Karl
 * Olivera-Nieto, Laura
@@ -60,6 +59,6 @@ VODF Lead Editors
 
 
 Spokespeople
-------------
+============
 * Zanin, Roberta
 * Khélifi, Bruno

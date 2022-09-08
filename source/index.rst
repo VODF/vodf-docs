@@ -14,8 +14,9 @@
 The *Very-high-energy Open Data Format*, VODF, is an open data model and format
 for Very-High-Energy (VHE) gamma-ray and neutrino astronomy.
 
-The VODF Working group
-======================
+========================
+ The VODF Working group
+========================
 
 The VODF working group contains members from the following astronomincal telescopes and observatories:
 
@@ -31,8 +32,9 @@ The VODF working group contains members from the following astronomincal telesco
 - **SWGO** - Southern Wide-Field Gamma-Ray Observatory
 - **VERITAS** - Very High Energy Radiation Telescope Array System
 
-Citing VODF
-===========
+=============
+ Citing VODF
+=============
 
 
 .. toctree::

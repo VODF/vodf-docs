@@ -1,5 +1,6 @@
-Data Format
-===========
+=============
+ Data Format
+=============
 
 .. panels::
 

@@ -1,5 +1,6 @@
-Science-ready
-=============
+===============
+ Science-ready
+===============
 
 
 
@@ -12,6 +13,6 @@ Science-ready
 
 
 Metadata
---------
+========
 
 common metadata for Science-Ready data products
