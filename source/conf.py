@@ -82,7 +82,8 @@ html_theme_options = {
         "json_url": json_url,
         "version_match": version_match,
     },
-    # "announcement": "<p>Test version</p>",
+    "header_links_before_dropdown": 6,
+    #"announcement": "<p>Test version</p>",
 }
 
 html_context = {

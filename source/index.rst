@@ -19,10 +19,17 @@ The VODF Working group
 
 The VODF working group contains members from the following astronomincal telescopes and observatories:
 
+- **ASTRI** - Astronomia a Specchi a Technologica Replicante Italiana
 - **CTAO**  - Cherenkov Telescope Array Observatory
+- **FACT** - First APD Cherenkov Telescope
+- **Fermi-LAT** - Large Area Telescope on the Fermi Space Telescope
 - **HAWC** - High-Energy Water Cherenkov telescope
+- **H.E.S.S.** - High Energy Stereoscopic System
+- **IceCube** - Neutrino Observatory
 - **KM3NeT** - The Cubic Kilometre Neutrino Telescope
-- ...
+- **MAGIC** - Major Atmospheric Gamma-ray Imaging Cherenkov telecope
+- **SWGO** - Southern Wide-Field Gamma-Ray Observatory
+- **VERITAS** - Very High Energy Radiation Telescope Array System
 
 Citing VODF
 ===========
@@ -33,6 +40,8 @@ Citing VODF
    :hidden:
 
    context
+   data_model
    data_format/index
    tools
    contributing
+   contact

@@ -2,12 +2,10 @@ Contributing
 ============
 
 
-Communication
--------------
+Meetings
+--------
 
-- mailing List, slack, etc
 - meeting notes
-
 
 Contributing Changes to VODF
 ----------------------------
