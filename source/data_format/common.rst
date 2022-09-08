@@ -1,5 +1,5 @@
-Common
-======
+Common Data Structures
+======================
 
 .. toctree::
    :maxdepth: 2

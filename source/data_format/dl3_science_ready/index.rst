@@ -1,8 +1,6 @@
 Science-ready
 =============
 
-CTA DL3
-
 
 
 .. toctree::

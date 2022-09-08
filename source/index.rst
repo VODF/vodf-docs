@@ -8,6 +8,7 @@
    :align: center
    :width: 600px
    :alt: VODF: The Very-high-energy Open Data Format
+   :class: no-scaled-link
 
 
 The *Very-high-energy Open Data Format*, VODF, is an open data model and format
@@ -29,7 +30,7 @@ Citing VODF
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents
+   :hidden:
 
    context
    data_format/index

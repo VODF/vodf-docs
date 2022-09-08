@@ -1,6 +1,17 @@
 Contributing
 ============
 
-- communication: maling List, slack, etc
+
+Communication
+-------------
+
+- mailing List, slack, etc
 - meeting notes
-- guidelines for contribution
+
+
+Contributing Changes to VODF
+----------------------------
+
+- who can contribute?
+- code of conduct
+- how to make a pull request

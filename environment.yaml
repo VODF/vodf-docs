@@ -5,3 +5,5 @@ channels:
 dependencies:
   - sphinx
   - pydata-sphinx-theme
+  - pip:
+      - sphinx_panels
