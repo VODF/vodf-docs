@@ -23,12 +23,15 @@ The VODF working group contains members from the following astronomincal telesco
 - **KM3NeT** - The Cubic Kilometre Neutrino Telescope
 - ...
 
+Citing VODF
+===========
+
 
 .. toctree::
    :maxdepth: 1
-   :caption: Data Models
+   :caption: Contents
 
-   event_lists
-   irfs
-   metadata
-   observation_tables
+   context
+   data_format/index
+   tools
+   contributing

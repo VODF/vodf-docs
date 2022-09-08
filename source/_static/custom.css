@@ -1,6 +1,6 @@
 :root {
-    --pst-font-family-base: "Fira Sans", var(--pst-font-family-base-system);
-    --pst-font-family-heading: "Fira Sans", Cambria, Georgia, Times, var(--pst-font-family-base-system);
+    --pst-font-family-base: "Fira Sans", Tahoma, var(--pst-font-family-base-system);
+    --pst-font-family-heading: "Fira Sans",  Tahoma, Arial, var(--pst-font-family-base-system);
 
 }
 
