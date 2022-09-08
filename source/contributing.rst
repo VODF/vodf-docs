@@ -12,6 +12,6 @@ Communication
 Contributing Changes to VODF
 ----------------------------
 
-- who can contribute?
+- who can you contribute?
 - code of conduct
 - how to make a pull request
