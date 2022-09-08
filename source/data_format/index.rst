@@ -9,7 +9,7 @@ Data Format
 
     .. link-button:: common
         :type: ref
-        :text: Common Data
+        :text: Common Data Structures
         :classes: btn-outline-primary btn-block stretched-link
 
     ---

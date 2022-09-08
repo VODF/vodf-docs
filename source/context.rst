@@ -54,12 +54,12 @@ VODF Steering committee
 VODF Lead Editors
 ------------------
 
-* Kosack, K
-* Olivera-Nieto, L
-* Schnabel, J
+* Kosack, Karl
+* Olivera-Nieto, Laura
+* Schnabel, Jutta
 
 
 Spokespeople
 ------------
-* Zanin, R.
-* Khélifi, B.
+* Zanin, Roberta
+* Khélifi, Bruno
