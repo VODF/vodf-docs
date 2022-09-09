@@ -31,9 +31,9 @@ Checkout the git repo (get the URL in the GitHub page - you can use https or ssh
   git clone https://github.com/VODF/vodf-docs.git
  
  
- Then to make your change, first make a branch (in this example, we will call it 
- `my changes` but you should choose a descriptive name), edit the source, 
- push your branch and open a PR:
+Then to make your change, first make a branch (in this example, we will call it 
+`my changes` but you should choose a descriptive name), edit the source, 
+push your branch and open a PR:
  
 .. code:: sh
 
