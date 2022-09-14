@@ -1,6 +1,6 @@
-==========
- Metadata
-==========
+==================
+ General Metadata
+==================
 
 Description of metadata headers that may appear in VODF files
 
