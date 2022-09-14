@@ -68,7 +68,7 @@ VODF Lead Editors
 * Schnabel, Jutta
 
 
-Conveniers
+Conveners
 ----------
 * Zanin, Roberta
 * Khélifi, Bruno
