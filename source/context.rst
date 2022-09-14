@@ -11,13 +11,13 @@ Constraints
 What is needed for neutrinos, for wide-field telescopes, pointed telescopes, etc.
 
 
-==========
+
 Governance
 ==========
 
 
 VODF Steering committee
-=======================
+-----------------------
 
 .. list-table:: Steering Committee
    :header-rows: 1
@@ -61,14 +61,14 @@ VODF Steering committee
      - Amanda Weinstein
 
 VODF Lead Editors
-=================
+-----------------
 
 * Kosack, Karl
 * Olivera-Nieto, Laura
 * Schnabel, Jutta
 
 
-Spokespeople
-============
+Conveniers
+----------
 * Zanin, Roberta
 * Khélifi, Bruno
