@@ -5,6 +5,16 @@
 sljhdf slkdjf lksjf lsjdfl jsfkjh isb isfi sdf iusdfhisdfuh sudhfi ushdf iushdfi
 ushdf iuhsifh siufdhi sudhfi ush
 
+Constraints
+-----------
+
+What is needed for neutrinos, for wide-field telescopes, pointed telescopes, etc.
+
+
+==========
+Governance
+==========
+
 
 VODF Steering committee
 =======================
