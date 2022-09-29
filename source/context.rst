@@ -1,3 +1,4 @@
+.. Licensed under a 3-clause BSD style license - see LICENSE.rst
 =========
  Context
 =========
@@ -43,7 +44,7 @@ VODF Steering committee
      - Xiaojie Wang
    * - H.E.S.S.
      - pointing γ-ray instrument
-     - Bruno Khelifi
+     - Bruno Khélifi
    * - KM3Net
      - neutrino detector
      - Kay Graf

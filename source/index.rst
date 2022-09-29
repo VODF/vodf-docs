@@ -1,3 +1,4 @@
+.. Licensed under a 3-clause BSD style license - see LICENSE.rst
 .. VODF documentation master file, created by
    sphinx-quickstart on Wed Sep  7 11:14:33 2022.
    You can adapt this file completely to your liking, but it should at least
@@ -51,5 +52,5 @@ The VODF working group contains members from the following astronomincal telesco
    data_format/index
    tools
    contributing
-   Code of Conduct<code_conduct.rst>
+   code_conduct
    contact
