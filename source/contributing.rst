@@ -21,7 +21,7 @@ Contributing Changes to VODF
 Reporting Issues
 ----------------
 When opening an issue to report a problem, please try to provide a minimal example
-that describes the issue along with details of the used data and `VODF` version you
+that describes the issue along with details of the used data and VODF version you
 are using.
 
 How to make a change?
@@ -82,8 +82,8 @@ In order to properly build the authors list with you as contributor, VODF is usi
 so-called **Developer Certificate of Origin** (DCO). This is a lightweight way for
 contributors to certify that they wrote or otherwise have the right to submit the
 code they are contributing to the project. The used DCO is from the Linux Foundation
-and can be found [below](#markdown-header-gammapy-developer-certification-of-origin). The practical acceptation of our DCO
-can be found here: :ref:`DCO`.
+and can be found here :ref:`DCOaccept`. The practical acceptation of our DCO can
+be found here: :ref:`DCO`.
 
 .. _DCOaccept:
 
