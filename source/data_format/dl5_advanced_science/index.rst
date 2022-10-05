@@ -1,7 +1,8 @@
 .. Licensed under a 3-clause BSD style license - see LICENSE.rst
-=======================
- Advanced Science Data
-=======================
+
+=====================
+Advanced Science Data
+=====================
 
 (CTA Data Level 5)
 
