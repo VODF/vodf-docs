@@ -79,5 +79,4 @@ VODF is licensed under a 3-clause BSD style license - see the
    data_format/index
    tools
    contributing
-   code_conduct
    contact
