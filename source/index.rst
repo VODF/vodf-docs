@@ -51,4 +51,5 @@ The VODF working group contains members from the following astronomincal telesco
    data_format/index
    tools
    contributing
+   code_conduct
    contact
