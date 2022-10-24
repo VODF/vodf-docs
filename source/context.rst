@@ -1,19 +1,38 @@
-=========
- Context
-=========
+.. Licensed under a 3-clause BSD style license - see LICENSE.rst
 
-sljhdf slkdjf lksjf lsjdfl jsfkjh isb isfi sdf iusdfhisdfuh sudhfi ushdf iushdfi
-ushdf iuhsifh siufdhi sudhfi ush
+=======
+Context
+=======
 
-Constraints
-===========
+The VODF forum was created at the end of 2021 as the extension or generalisation of
+the Gamma Astro Data Formats initiative
+`(GADF) <https://gamma-astro-data-formats.readthedocs.io/>`_. The latter has aimed to
+build a common data format of the gamma-ray day from IACTs, allowing joint analyses
+or data sharing with success. The VODF aims to build a commun format for IACTs, WCDs
+and neutrino detectors with the same objectives. In addition, with the development of
+Open Science and certified open data repository (e.g. EOSC, SDC), data formats should
+follow as much as possible the
+`FAIR principles <https://www.go-fair.org/fair-principles/>`_ and
+the `IVOA standards <https://ivoa.net/documents/index.html>`_.
 
-What is needed for neutrinos, for wide-field telescopes, pointed telescopes, etc.
 
+..
+  Constraints
+  ===========
 
+  What is needed for neutrinos, for wide-field telescopes, pointed telescopes, etc.
 
 Governance
 ==========
+
+VODF is supported by eleven astroparticle experiments whom representatives have set
+a governance for the initiative, that can be found
+`here <_static/VODF_Governance.pdf>`_. The different VODF bodies are given the
+following:
+
+* `VODF Steering committee`_
+* `VODF Lead Editors`_
+* `Conveners`_
 
 
 VODF Steering committee
@@ -27,37 +46,37 @@ VODF Steering committee
      - Category
      - Representative
    * - ASTRI
-     - pointing γ-ray instrument
+     - Pointing γ-ray instrument
      - Fabio Pintore
    * - CTAO
-     - pointing γ-ray instrument
+     - Pointing γ-ray instrument
      - Roberta Zanin
    * - FACT
-     - pointing γ-ray instrument
+     - Pointing γ-ray instrument
      - Maximilian Linhoff
    * - Fermi-LAT
-     - slewing γ-ray instrument
+     - Slewing γ-ray instrument
      - Nicola Omodei
    * - HAWC
-     - slewing γ-ray instrument
+     - Slewing γ-ray instrument
      - Xiaojie Wang
    * - H.E.S.S.
-     - pointing γ-ray instrument
-     - Bruno Khelifi
-   * - KM3Net
-     - neutrino detector
-     - Kay Graf
+     - Pointing γ-ray instrument
+     - Bruno Khélifi
    * - IceCube
-     - neutrino detector
+     - Neutrino detector
      - Marcos Santander
+   * - KM3Net
+     - Neutrino detector
+     - Kay Graf
    * - MAGIC
-     - pointing γ-ray instrument
+     - Pointing γ-ray instrument
      - Cosimo Nigro
    * - SWGO
-     - slewing γ-ray instrument
+     - Slewing γ-ray instrument
      - Andrew Smith
    * - VERITAS
-     - pointing γ-ray instrument
+     - Pointing γ-ray instrument
      - Amanda Weinstein
 
 VODF Lead Editors
@@ -67,8 +86,9 @@ VODF Lead Editors
 * Olivera-Nieto, Laura
 * Schnabel, Jutta
 
+.. _Conv:
 
 Conveners
-----------
+---------
 * Zanin, Roberta
 * Khélifi, Bruno
