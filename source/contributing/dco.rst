@@ -1,9 +1,11 @@
 .. _DCOaccept:
 
-Acceptation of the Developer Certificate of Origin (DCO)
---------------------------------------------------------
-Each contributor shall accept the DCO which allows VODF to use your work and to cite
-you as contributor.
+=======================================
+ Developer Certificate of Origin (DCO)
+=======================================
+
+Each contributor shall accept the DCO which allows VODF to use your work and to
+cite you as contributor.
 
 **If you are willing to agree to these terms, the following agreement line should be added to every commit message:**
 
@@ -13,18 +15,30 @@ Four solutions exist:
 
 1. You add this message by hand into each of your commit messages (not recommended)
 
-2. You can sign each of your commits with the command: "``git commit -s``".
+2. You can sign each of your commits with the command:
+
+.. code:: sh
+
+   git commit -s
 
 If you have authored a commit that is missing its ‘Signed-off-by’ line, you can amend your commits and push them to
-GitHub: "``git commit --amend --noedit --signoff``"
+GitHub:
+
+.. code:: sh
+
+   git commit --amend --noedit --signoff
+
 (see also this `How To <https://github.com/src-d/guide/blob/master/developer-community/fix-DCO.md#how-to-add-sign-offs-retroactively>`_).
 
 3. You can make an alias of the command "``git commit -s``", e.g.
 
-``alias gcs 'git commit -s'``
+.. code:: sh
 
-4. You can create a so-called `git hooks` allowing to automatically sign all your commits (recommended option). This
-method is described in detail `here <https://github.com/src-d/guide/blob/master/developer-community/fix-DCO.md#how-to-prevent-missing-sign-offs-in-the-future>`_.
+   alias gcs 'git commit -s'
+
+4. You can create a *git hook* to automatically sign all your commits
+   (recommended option). This method is `described in detail here <https://github.com/src-d/guide/blob/master/developer-community/fix-DCO.md#how-to-prevent-missing-sign-offs-in-the-future>`_
+
 
 For each of these solutions, it is **mandatory** to correctly set your `user.name` and `user.email` as part of your git
 configuration (see `this page <https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address>`_ to configure it).
@@ -33,8 +47,9 @@ because the DCO is a binding document, granting the Gammapy project to be an ope
 
 .. _DCO:
 
-VODF Developer Certification of Origin
---------------------------------------
+========================================
+ VODF Developer Certification of Origin
+========================================
 
 ..  code-block:: text
     :name: "DCO"
