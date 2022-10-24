@@ -1,7 +1,8 @@
 .. Licensed under a 3-clause BSD style license - see LICENSE.rst
-======================
-Common Data Structures
-======================
+
+========================
+ Common Data Structures
+========================
 
 .. toctree::
    :maxdepth: 2
@@ -10,10 +11,10 @@ Common Data Structures
 
 
 Time Formats and scales
------------------------
+=======================
 
 Coordinates
------------
+===========
 
 N-Dimensional Maps
-------------------
+==================
