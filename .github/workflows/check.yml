@@ -6,7 +6,15 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: Conda setup
+      uses: conda-incubator/setup-miniconda@v2
       with:
-        docs-folder: "."
+        mamba-version: "*"
+        auto-update-conda: true
+        activate-environment: "vodf-docs"
+        environment-file: environment.yml
+    - name: run-sphinx
+      run: |
+        make html
