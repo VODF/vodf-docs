@@ -16,12 +16,6 @@ follow as much as possible the
 the `IVOA standards <https://ivoa.net/documents/index.html>`_.
 
 
-..
-  Constraints
-  ===========
-
-  What is needed for neutrinos, for wide-field telescopes, pointed telescopes, etc.
-
 Governance
 ==========
 
@@ -34,6 +28,9 @@ following:
 * `VODF Lead Editors`_
 * `Conveners`_
 
+
+All the meeting notes can be found on
+`The VODF-Meetings GitHub repository <https://github.com/VODF/vodf-meetings>`_.
 
 VODF Steering committee
 -----------------------
