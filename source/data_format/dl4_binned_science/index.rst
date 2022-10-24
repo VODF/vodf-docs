@@ -1,8 +1,6 @@
-.. Licensed under a 3-clause BSD style license - see LICENSE.rst
-
-===================
-Binned Science Data
-===================
+=====================
+ Binned Science Data
+=====================
 
 (CTA Data Level 4)
 

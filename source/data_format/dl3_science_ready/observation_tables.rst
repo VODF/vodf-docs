@@ -1,8 +1,6 @@
-.. Licensed under a 3-clause BSD style license - see LICENSE.rst
-
-==================
-Observation Tables
-==================
+====================
+ Observation Tables
+====================
 
 These link observations and IRFs
 
