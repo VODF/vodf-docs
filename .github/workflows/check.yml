@@ -1,0 +1,27 @@
+name: "Pull Request Docs Check"
+on:
+- pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: Conda setup
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        mamba-version: "*"
+        auto-update-conda: true
+        activate-environment: "vodf-docs"
+        environment-file: environment.yaml
+        python-version: "3.10"
+    - name: conda-info
+      run: |
+        conda info
+        conda list
+    - name: run-sphinx
+      shell: bash -l {0}
+      run: |
+        conda info
+        make html
