@@ -84,7 +84,7 @@ html_theme_options = {
         "version_match": version_match,
     },
     "header_links_before_dropdown": 6,
-    #"announcement": "<p>Test version</p>",
+    "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
 }
 
 html_context = {
