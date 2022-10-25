@@ -2,7 +2,9 @@
 
 Documentation source for the *Very-high-energy Open Data Format* (VODF)
 
-## Building:
+The documentation is automatically built at https://vodf.readthedocs.org
+
+## Building Locally:
 
 Set up your environment with *conda* or *mamba*:
 
