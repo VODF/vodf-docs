@@ -33,7 +33,7 @@ and observatories:
 
 - **ASTRI** - Astronomia a Specchi a Technologica Replicante Italiana, (IACT telescope)
 - **CTAO**  - Cherenkov Telescope Array Observatory (IACT observatory)
-- **FACT** - First APD Cherenkov Telescope (IACT telescope)
+- **FACT** - First G-APD Cherenkov Telescope (IACT telescope)
 - **Fermi-LAT** - Large Area Telescope on the Fermi Space Telescope (High-energy Space Observatory)
 - **HAWC** - High-Energy Water Cherenkov telescope (WCT)
 - **H.E.S.S.** - High Energy Stereoscopic System (IACT Array)
