@@ -21,7 +21,7 @@ import os
 # -- Project information -----------------------------------------------------
 
 project = "VODF"
-copyright = "2022, VODF Working Group"
+copyright = "2025, VODF Working Group"
 author = "VODF Working Group"
 
 # The full version, including alpha/beta/rc tags
