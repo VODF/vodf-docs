@@ -1,11 +1,7 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 name: vodf-docs
 channels:
-  - defaults
   - conda-forge
 dependencies:
   - sphinx
   - pydata-sphinx-theme
-  - pip
-  - pip:
-      - sphinx_panels
