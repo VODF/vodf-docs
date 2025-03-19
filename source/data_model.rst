@@ -19,7 +19,10 @@ Glossary
       Short for "Instrument Response File"
 
     Observation
-      Within our project, an observation should be seen as the minimal set of Science-Ready data (DL3/L1, ie events list + IRFs) that a user can fetch. This set can be discovered by users using the instrument name, the observation time and a sky region. The minimal size definition is up to the observatory/experiment. It can be one  data acquisition sequence (an OB), a subset based on any parameter or a merge of sequences.
+      Within our project, an observation should be seen as the minimal set of Science-Ready data (DL3/L1, ie events list
+      + IRFs) that a user can fetch. This set can be discovered by users using, at minima, the instrument name, the
+      observation time and a sky region. The minimal size definition is up to the observatory/experiment. It can be one
+      data acquisition sequence, a subset based on any parameter or a merge of sequences.
     
     PR
       Short for "Pull Request"
