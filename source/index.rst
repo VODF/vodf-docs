@@ -54,14 +54,14 @@ Contributing to VODF
 The VODF forum is made both by and for its users, so we welcome and
 encourage contributions of many kinds. Our goal is to keep this a positive,
 inclusive, successful, and growing community by abiding with the
-`VODF Community Code of Conduct <./code_conduct.html>`_.
+`VODF Community Code of Conduct <./contributing/code_conduct.html>`_.
 
 The VODF initiative uses a mechanism known as a `Developer Certificate of Origin`
 (DCO). The DCO is a binding statement that asserts that you are the creator of
 your contribution, and that you wish to allow VODF to use your work to cite
 you as contributor. More detailed information on contributing to the project or
 submitting feedback can be found on the
-`Contributing page <./contributing.html>`_.
+`Contributing page <./contributing/index.html>`_.
 
 =======
 Licence
