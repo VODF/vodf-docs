@@ -21,7 +21,7 @@ import os
 # -- Project information -----------------------------------------------------
 
 project = "VODF"
-copyright = "2022, VODF Working Group"
+copyright = "2025, VODF Working Group"
 author = "VODF Working Group"
 
 # The full version, including alpha/beta/rc tags
@@ -34,8 +34,7 @@ release = "0.1"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx.ext.mathjax",
-    "sphinx_panels",
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,8 +52,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-
-json_url = "https://github.com/vodf/vodf-docs/tree/main/source/_static/switcher.json"
+#json_url = "https://github.com/vodf/vodf-docs/tree/main/source/_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
@@ -79,10 +77,10 @@ html_theme_options = {
     "use_edit_page_button": True,
     "navbar_align": "content",
     "navbar_end": ["version-switcher", "navbar-icon-links"],
-    "switcher": {
-        "json_url": json_url,
-        "version_match": version_match,
-    },
+    # "switcher": {
+    #     "json_url": json_url,
+    #     "version_match": version_match,
+    # },
     "header_links_before_dropdown": 6,
     "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
 }
