@@ -10,7 +10,7 @@ package {
 </style>
 
 package IVOA {
-        class ObsCoreEntry {
+        class ObsCore {
 
         }
 }
@@ -41,7 +41,8 @@ package VODF.L1 {
         DataRelease "1..*" -- "1" ObservationCollection
         ObservationCollection "1" -- "1..*" Observation
 
-        ObsCoreEntry -r- Observation
+        ObsCore -r- Observation : "maps to <"
+
         Observation  "1" -- "0..1" EventList
         Observation  "0..*" *--  "0..1" IRF
         Observation "1" --  "1..*" OnTime
