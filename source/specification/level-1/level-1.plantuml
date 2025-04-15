@@ -1,0 +1,45 @@
+@startuml
+hide circles
+
+class DataRelease  {
+        + data_release_id
+        + time_interval
+        + facility
+        + processing_configuration
+        + processing_pipeline_version
+}
+
+class Observation {
+        + obs_id
+        + time_interval
+        + spatial_region : SkyRegion
+        + instrument_name
+        + ...
+}
+
+Observation "1" -- "0..1" Pointing
+
+Pointing <|-- NominalPointing
+Pointing <|-- TimeSeriesPointing
+
+DataRelease "1..*" -- "1" ObservationCollection
+ObservationCollection "1" -- "1..*" Observation
+
+class ObsCoreEntry <<IVOA>> {
+
+}
+
+ObsCoreEntry -r- Observation
+Observation  "1" -- "0..1" EventList
+Observation  "0..*" *--  "0..1" IRF
+Observation "1" --  "1..*" OnTime
+OnTime <|-- SingleOnTime
+OnTime <|-- TimeSeriesOnTime
+
+EventList "1" -- "0..*" Event
+
+Event "properties" -- "dimensions" IRFComponent
+
+IRF "1"  *-- "1..*" IRFComponent
+
+@enduml

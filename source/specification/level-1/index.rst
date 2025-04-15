@@ -11,6 +11,9 @@ VODF Level-1 contains data products related to specific
 Data Model
 ----------
 
+.. uml:: level-1.plantuml
+   :caption: VODF **Level-1** Data Model
+
 
 Data Products
 -------------
