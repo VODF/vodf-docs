@@ -1,5 +1,6 @@
-Level-2
-=======
+=========
+ Level-2
+=========
 
 VODF Level-2 specifies data products produced by binning the spatial, temporal,
 and/or spectral components of the `Level-1` data over a target-specific or a

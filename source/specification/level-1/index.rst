@@ -1,7 +1,6 @@
-.. Level-1
-
-Level-1
-=======
+=========
+ Level-1
+=========
 
 VODF Level-1 contains data products related to specific
 :term:`observations<observation>`, and in particular to :term:`events<event>` detected
@@ -19,6 +18,16 @@ set of physical estimated parameters per detected particle.
           also called "science-ready data". In CTAO, levels DL0-DL2 constitute
           the *raw* and *pre-processed* data levels that are out of scope for
           VODF.
+
+Data Model
+==========
+
+
+.. uml:: level-1.plantuml
+   :caption: VODF **Level-1** Data Model
+
+Observations
+------------
 
 The **Observation** forms the core of the `Level-1` data model. Note that we use
 the term "Observation" more generally than one might expect: an :term:`observation` is
@@ -40,9 +49,11 @@ A critical point is that an *Observation* is the minimum unit of what may be
 discovered by users knowing only the instrument name, a data release name, a
 time interval, and a sky region.
 
-.. uml:: level-1.plantuml
-   :caption: VODF **Level-1** Data Model
+Data Releases
+-------------
+
+TBD
 
 
 Data Products
--------------
+=============

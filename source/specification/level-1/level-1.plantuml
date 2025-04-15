@@ -1,5 +1,6 @@
 @startuml
 hide circles
+hide methods
 skinparam ClassBackgroundColor white/aliceblue
 skinparam ClassHeaderBackgroundColor lightblue
 <style>
@@ -25,7 +26,7 @@ package VODF.L1 {
                 + processing_pipeline_version
         }
 
-        class Observation {
+        class Observation #line.bold {
                 + obs_id
                 + time_interval
                 + spatial_region : SkyRegion
