@@ -10,7 +10,7 @@ package {
 </style>
 
 
-VODF.L1.Observation "1..*" --> "1" VODF.L2.DataSetCollection
+VODF.L1.Observation "1..*" -- "1" VODF.L2.DataSetCollection
 
 package VODF.L2 {
         DataSetCollection -- "1..*" DataSet
