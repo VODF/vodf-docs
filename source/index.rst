@@ -1,8 +1,4 @@
 .. Licensed under a 3-clause BSD style license - see LICENSE.rst
-.. VODF documentation master file, created by
-   sphinx-quickstart on Wed Sep  7 11:14:33 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 .. only:: html
 
@@ -29,9 +25,9 @@ spectra) and source catalogues. With these standards, common science tools can
 be used to analyze data from multiple high-energy instruments.  VODF aims to
 follow as much as possible the IVOA standards.
 
-======================
-The VODF Working group
-======================
+========================
+ The VODF Working group
+========================
 
 The VODF working group contains members from the following astronomical telescopes
 and observatories:
@@ -48,14 +44,16 @@ and observatories:
 - **SWGO** - Southern Wide-Field Gamma-Ray Observatory (WCT)
 - **VERITAS** - Very High Energy Radiation Telescope Array System (IACT array)
 
-..
-  =============
-   Citing VODF
-  =============
 
-====================
-Contributing to VODF
-====================
+=============
+ Citing VODF
+=============
+
+TBD
+
+======================
+ Contributing to VODF
+======================
 The VODF forum is made both by and for its users, so we welcome and
 encourage contributions of many kinds. Our goal is to keep this a positive,
 inclusive, successful, and growing community by abiding with the
@@ -68,12 +66,12 @@ you as contributor. More detailed information on contributing to the project or
 submitting feedback can be found on the
 `Contributing page <./contributing/index.html>`_.
 
-=======
-Licence
-=======
+=======================
+ License and Copyright
+=======================
+
 VODF is licensed under a 3-clause BSD style license - see the
 `LICENSE.md <https://github.com/VODF/vodf-docs/blob/main/LICENSE.md>`_ file.
-
 
 .. toctree::
    :maxdepth: 1
