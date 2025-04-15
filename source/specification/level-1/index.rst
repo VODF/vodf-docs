@@ -1,3 +1,5 @@
+.. Level-1
+
 Level-1
 =======
 
@@ -8,8 +10,8 @@ of those events map to physical quantities. It also covers related information
 such as time-series tables of data quality, instrumental or atmospheric
 conditions.
 
-Level-1 data is assumed to be already pre-processed by the instrument that
-produces it. The pre-processing is assumed to include all calibration and
+Level-1 data is assumed to be already *pre-processed* by the instrument that
+produces it. The pre-processing must include all calibration and
 :term:`reconstruction` necessary to reduce the raw data of the instrument into a
 set of physical estimated parameters per detected particle.
 

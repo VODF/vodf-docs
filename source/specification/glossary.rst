@@ -22,7 +22,7 @@ Glossary
 
     observation
       From a conceptual standpoint, an observation is the act of recording data
-      with a telescope, including relevant data processing. For VODF `Level-1`,
+      with a telescope, including relevant data processing. For VODF Level-1,
       it is also the minimal set of data that a user can fetch to perform a
       science analysis.
 
