@@ -29,9 +29,6 @@ spectra) and source catalogues. With these standards, common science tools can
 be used to analyze data from multiple high-energy instruments.  VODF aims to
 follow as much as possible the IVOA standards.
 
-..  note::
-    This web site is still under construction
-
 ======================
 The VODF Working group
 ======================
