@@ -9,6 +9,12 @@ package {
 }
 </style>
 
+package IVOA {
+        class ObsCoreEntry {
+
+        }
+}
+
 package VODF.L1 {
 
         class DataRelease  {
@@ -34,10 +40,6 @@ package VODF.L1 {
 
         DataRelease "1..*" -- "1" ObservationCollection
         ObservationCollection "1" -- "1..*" Observation
-
-        class ObsCoreEntry <<IVOA>> {
-
-        }
 
         ObsCoreEntry -r- Observation
         Observation  "1" -- "0..1" EventList

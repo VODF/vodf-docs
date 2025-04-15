@@ -1,0 +1,29 @@
+@startuml
+hide circles
+skinparam ClassBackgroundColor white/aliceblue
+skinparam ClassHeaderBackgroundColor lightblue
+<style>
+package {
+        LineColor gray
+        FontColor gray
+}
+</style>
+
+
+VODF.L1.Observation "1..*" --> "1" VODF.L2.DataSetCollection
+
+package VODF.L2 {
+        DataSetCollection -- "1..*" DataSet
+        DataSet -- IRF
+        IRF -- ExposureMap
+        IRF -- PSFMap
+        IRF -- EDispMap
+        IRF -- BkgMap
+
+        DataSet -- MaskMap
+
+        DataSet -- Events
+        Events -- "0..1" CountsMap
+        Events -- "0..1" EventList
+}
+@enduml

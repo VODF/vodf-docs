@@ -7,10 +7,6 @@ VODF Level-1 contains data products related to specific
 
 .. tip:: This is equivalent to *data level 3 (DL3)* defined by CTAO, also called "science-ready data"
 
-
-Data Model
-----------
-
 .. uml:: level-1.plantuml
    :caption: VODF **Level-1** Data Model
 
