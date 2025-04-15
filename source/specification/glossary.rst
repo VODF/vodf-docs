@@ -3,6 +3,13 @@ Glossary
 
 .. glossary::
 
+    event-list
+      A table of information about detected particles, including their
+      reconstructed arrival time, position on the sky, and energy. Depending on
+      the specifics of the detector that measured them, other reconstructed
+      information may be included, such as signal/background classification
+      parameters.
+
     IACT
       Short for "Imaging Atmospheric Cherenkov Telescope"
 
@@ -16,18 +23,20 @@ Glossary
       data acquisition sequence (generally associated with an `obs_id`), a subset based on any parameter or a merge of
       sequences.
 
+    reconstruction
+      For VHE data, reconstruction is the act of estimating physical parameters of the detected particle (photon, neutrino, cosmic ray) from lower-level instrumental parameters.  For example, for an IACT, one might reconstruct a gamma ray photon's energy from the Cherenkov light intensity and geometric parameters of the detected air-shower.
+
     PR
       Short for "Pull Request"
 
     SOI
-      Short for "Stable Observation Interval". It is a time interval during which the IRFs are considered as stable, within systematics.
+      Short for "Stable Observation Interval". It is a time interval during
+      which the IRFs are considered as stable, within systematics.
+
+    VHE
+      Very-High-Energy, i.e. pertaining to particles roughly in the energy range
+      of a few GeV to hundreds of TeV.
 
     WCD
       Short for "Water Cherenkov Detector"
 
-    event-list
-      A table of information about detected particles, including their
-      reconstructed arrival time, position on the sky, and energy. Depending on
-      the specifics of the detector that measured them, other reconstructed
-      information may be included, such as signal/background classification
-      parameters.
