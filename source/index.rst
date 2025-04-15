@@ -4,13 +4,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. only:: html
 
-.. image:: _static/VODF-logo.svg
-   :align: center
-   :width: 600px
-   :alt: VODF: The Very-high-energy Open Data Format
-   :class: no-scaled-link
+  .. image:: _static/VODF-logo.svg
+     :align: center
+     :width: 600px
+     :alt: VODF: The Very-high-energy Open Data Format
+     :class: no-scaled-link
 
+.. only:: latex
+
+  .. image:: _static/VODF-logo.pdf
+     :align: center
+     :width: 600px
+     :alt: VODF: The Very-high-energy Open Data Format
+     :class: no-scaled-link
 
 The *Very-high-energy Open Data Format*, VODF, is an open data model and format
 for Very-High-Energy (VHE) gamma-ray and neutrino astronomy. Its goal is to

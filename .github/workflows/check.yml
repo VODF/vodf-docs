@@ -16,6 +16,8 @@ jobs:
         activate-environment: "vodf-docs"
         environment-file: environment.yaml
         python-version: "3.13"
+        conda-remove-defaults: "true"  # only want conda-forge
+        channels: conda-forge
     - name: conda-info
       run: |
         conda info
@@ -23,5 +25,14 @@ jobs:
     - name: run-sphinx
       shell: bash -l {0}
       run: |
-        conda info
         make html
+    - name: build-pdf
+      shell: bash -l {0}
+      run: |
+        sudo apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra tex-gyre texlive-latex-extra latexmk texlive-luatex xindy
+        make latexpdf
+    - name: Upload PDF doc
+      uses: actions/upload-artifact@v4
+      with:
+        name: vodf_documentation_pdf
+        path: build/latex/vodf.pdf
