@@ -25,6 +25,7 @@ Data Model
 
 .. uml:: level-1.plantuml
    :caption: VODF **Level-1** Data Model
+   :width: 600px
 
 Observations
 ------------
