@@ -1,20 +1,11 @@
-.. Licensed under a 3-clause BSD style license - see LICENSE.rst
-
-==========
-Data Model
-==========
-
-Diagram(s) of top-level model
------------------------------
-
 Glossary
---------
+========
 
 .. glossary::
 
     IACT
       Short for "Imaging Atmospheric Cherenkov Telescope"
-    
+
     IRF
       Short for "Instrument Response Function". The set of IRFs allows to transform the measurements in detector units/coordinates to astrophysical quantities with physical units/coordinates
 
@@ -27,9 +18,16 @@ Glossary
 
     PR
       Short for "Pull Request"
-    
+
     SOI
       Short for "Stable Observation Interval". It is a time interval during which the IRFs are considered as stable, within systematics.
 
     WCD
       Short for "Water Cherenkov Detector"
+
+    event-list
+      A table of information about detected particles, including their
+      reconstructed arrival time, position on the sky, and energy. Depending on
+      the specifics of the detector that measured them, other reconstructed
+      information may be included, such as signal/background classification
+      parameters.
