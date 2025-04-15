@@ -45,6 +45,8 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+plantuml_output_format = "svg"
+plantuml_latex_output_format = "tikz"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -76,7 +78,7 @@ html_theme_options = {
     # "navigation_depth": 4,
     "use_edit_page_button": True,
     "navbar_align": "content",
-    "navbar_end": ["version-switcher", "navbar-icon-links"],
+    "navbar_end": ["version-switcher", "navbar-icon-links"], # "theme-switcher"
     # "switcher": {
     #     "json_url": json_url,
     #     "version_match": version_match,
@@ -90,6 +92,7 @@ html_context = {
     "github_repo": "vodf-docs",
     "github_version": "main",
     "doc_path": "source",
+    "default_mode": "light",
 }
 
 html_static_path = ["_static"]
