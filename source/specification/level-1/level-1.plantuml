@@ -1,5 +1,13 @@
 @startuml
 hide circles
+skinparam ClassBackgroundColor white/aliceblue
+skinparam ClassHeaderBackgroundColor lightblue
+<style>
+package {
+        LineColor gray
+        FontColor gray
+}
+</style>
 
 package VODF.L1 {
 
