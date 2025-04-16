@@ -1,7 +1,7 @@
 [
     {
-        "name": "dev",
+        "name": "dev (unreleased)",
         "version": "latest",
-        "url": "https://vodf-docs.readthedocs.io/en/latest/"
+        "url": "https://vodf.readthedocs.io/en/latest/"
     }
 ]
