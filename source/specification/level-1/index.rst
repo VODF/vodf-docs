@@ -5,9 +5,9 @@
 VODF Level-1 contains data products related to specific
 :term:`observations<observation>`, and in particular to :term:`events<event>` detected
 by a given instrument as well as :term:`IRF` that describe how the parameters
-of those events map to physical quantities. It also covers related information
-such as time-series tables of data quality, instrumental or atmospheric
-conditions.
+of those events map to physical quantities. This data level may contain extra information on
+the instrument pointing, provenance information, :term:`stable time intervals or instrumental good time intervals<SOI>`, systematics error or quality estimation of the :term:`IRF`. It also covers related information
+such as time-series tables of data quality, instrumental or atmospheric conditions.
 
 Level-1 data is assumed to be already *pre-processed* by the instrument that
 produces it. The pre-processing must include all calibration and
