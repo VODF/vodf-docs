@@ -34,7 +34,7 @@ release = "0.1"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.plantuml',
+    "sphinxcontrib.plantuml",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -77,13 +77,16 @@ html_theme_options = {
     # "navigation_depth": 4,
     "use_edit_page_button": True,
     "navbar_align": "content",
-    "navbar_end": ["version-switcher", "navbar-icon-links"], # "theme-switcher"
+    "navbar_end": ["version-switcher", "navbar-icon-links"],  # "theme-switcher"
     "switcher": {
-         "json_url": "https://vodf.readthedocs.io/en/latest/_static/switcher.json",
-         "version_match": version_match,
+        "json_url": "https://vodf.readthedocs.io/en/latest/_static/switcher.json",
+        "version_match": version_match,
     },
     "header_links_before_dropdown": 6,
     "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
+    "footer_start": ["copyright",],
+    "footer_center": ["last-updated"],
+    "footer_end": ["sphinx-version", "theme-version"],
 }
 
 html_context = {
