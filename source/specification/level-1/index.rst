@@ -4,7 +4,7 @@
 
 VODF Level-1 contains data products related to specific
 :term:`observations<observation>`, and in particular to :term:`events<event>` detected
-by the given instrument as well as :term:`IRF` that describe how the parameters
+by a given instrument as well as :term:`IRF` that describe how the parameters
 of those events map to physical quantities. It also covers related information
 such as time-series tables of data quality, instrumental or atmospheric
 conditions.
