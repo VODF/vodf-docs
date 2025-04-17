@@ -34,7 +34,7 @@ release = "0.1"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-
+    "sphinxcontrib.plantuml",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -45,6 +45,8 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+plantuml_output_format = "svg"
+plantuml_latex_output_format = "tikz"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -52,7 +54,6 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-#json_url = "https://github.com/vodf/vodf-docs/tree/main/source/_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
@@ -76,13 +77,16 @@ html_theme_options = {
     # "navigation_depth": 4,
     "use_edit_page_button": True,
     "navbar_align": "content",
-    "navbar_end": ["version-switcher", "navbar-icon-links"],
-    # "switcher": {
-    #     "json_url": json_url,
-    #     "version_match": version_match,
-    # },
+    "navbar_end": ["version-switcher", "navbar-icon-links"],  # "theme-switcher"
+    "switcher": {
+        "json_url": "https://vodf.readthedocs.io/en/latest/_static/switcher.json",
+        "version_match": version_match,
+    },
     "header_links_before_dropdown": 6,
     "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
+    "footer_start": ["copyright",],
+    "footer_center": ["last-updated"],
+    "footer_end": ["sphinx-version", "theme-version"],
 }
 
 html_context = {
@@ -90,6 +94,7 @@ html_context = {
     "github_repo": "vodf-docs",
     "github_version": "main",
     "doc_path": "source",
+    "default_mode": "light",
 }
 
 html_static_path = ["_static"]
@@ -103,3 +108,10 @@ html_logo = "_static/VODF-logo.svg"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+
+# ======================================================================
+# Options for LaTeX docment output
+
+latex_engine = "lualatex"
+latex_logo = "_static/VODF-logo.pdf"

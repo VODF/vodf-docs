@@ -5,3 +5,5 @@ channels:
 dependencies:
   - sphinx
   - pydata-sphinx-theme
+  - sphinxcontrib-plantuml
+  - plantuml=1.2025.2

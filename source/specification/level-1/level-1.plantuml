@@ -1,0 +1,63 @@
+@startuml
+hide circles
+hide methods
+skinparam ClassBackgroundColor white/aliceblue
+skinparam ClassHeaderBackgroundColor lightblue
+skinparam backgroundcolor transparent
+
+<style>
+package {
+        LineColor gray
+        FontColor gray
+}
+</style>
+
+package IVOA {
+        class ObsCore {
+
+        }
+}
+
+package VODF.L1 {
+
+        class DataRelease  {
+                + data_release_id
+                + time_interval
+                + facility
+                + processing_configuration
+                + processing_pipeline_version
+        }
+
+        class Observation #line.bold {
+                + obs_id
+                + time_interval
+                + spatial_region : SkyRegion
+                + instrument_name
+                + ...
+        }
+
+        Observation "1" -- "0..1" Pointing
+
+        Pointing <|-- NominalPointing
+        Pointing <|-- TimeSeriesPointing
+
+        DataRelease "1..*" -- "1" ObservationCollection
+        ObservationCollection "1" -- "1..*" Observation
+
+        ObsCore -r- Observation : "maps to <"
+
+        Observation  "1" -- "0..1" EventList
+        Observation  "0..*" *--  "0..1" IRF
+        Observation "1" --  "1..*" OnTime
+        OnTime <|-- SingleOnTime
+        OnTime <|-- TimeSeriesOnTime
+
+        EventList "1" -- "0..*" Event
+
+        Event "properties" -- "dimensions" IRFComponent
+
+        IRF "1"  *-- "1..*" IRFComponent
+
+}
+
+@enduml
