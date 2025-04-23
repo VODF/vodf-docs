@@ -1,18 +1,7 @@
 @startuml
-hide circles
-hide methods
-skinparam ClassBackgroundColor white/aliceblue
-skinparam ClassHeaderBackgroundColor lightblue
-skinparam backgroundcolor transparent
+!include common.inc
 
-<style>
-package {
-        LineColor gray
-        FontColor gray
-}
-</style>
-
-package IVOA {
+package IVOA <<cloud>> {
         class ObsCore {
 
         }
@@ -30,31 +19,36 @@ package VODF.L1 {
 
         class Observation #line.bold {
                 + obs_id
+                --
                 + time_interval
                 + spatial_region : SkyRegion
-                + instrument_name
                 + ...
         }
 
-        Observation "1" -- "0..1" Pointing
+        class ObservationCollection {
 
-        Pointing <|-- NominalPointing
-        Pointing <|-- TimeSeriesPointing
+        }
+
+        ObsCore -r- Observation : "maps to <"
+
 
         DataRelease "1..*" -- "1" ObservationCollection
         ObservationCollection "1" -- "1..*" Observation
 
-        ObsCore -r- Observation : "maps to <"
+
+        Observation "1" -l- "1" Instrument
+        Observation "1" -r- "0..1" Pointing
+        Observation "1" --  "1..*" OnTime
 
         Observation  "1" -- "0..1" EventList
         Observation  "0..*" *--  "0..1" IRF
-        Observation "1" --  "1..*" OnTime
-        OnTime <|-- SingleOnTime
-        OnTime <|-- TimeSeriesOnTime
 
-        EventList "1" -- "0..*" Event
 
-        Event "properties" -- "dimensions" IRFComponent
+        ' removed for now: add to separate sub-diagram
+        'OnTime <|-- SingleOnTime
+        'OnTime <|-- TimeSeriesOnTime
+        'EventList "1" -- "0..*" Event
+
 
         IRF "1"  *-- "1..*" IRFComponent
 

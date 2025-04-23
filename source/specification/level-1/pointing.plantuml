@@ -1,0 +1,10 @@
+@startuml
+!include common.inc
+
+class NominalPointing <<metadata>>
+class TimeSeriesPointing <<table>>
+
+Pointing <|-- NominalPointing
+Pointing <|-- TimeSeriesPointing
+
+@enduml
