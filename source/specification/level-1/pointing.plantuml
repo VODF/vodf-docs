@@ -3,12 +3,18 @@
 
 
 package VODF.L1 {
-        class NominalPointing
+        abstract class Pointing
+
+        class SinglePointing
         class TimeSeriesPointing
 
-        Pointing <|-- NominalPointing
-        Pointing <|-- TimeSeriesPointing
+        Pointing <|-- SinglePointing
 
-        TimeSeriesPointing "1" o-- "1..*" PointingMeasurement
+        Pointing <|-- TimeSeriesPointing
+        TimeSeriesPointing "1" o-- "1..*" SinglePointing
+
+        SinglePointing <|-- HorizontalSinglePointing
+        SinglePointing <|-- CelestialSinglePointing
+
 }
 @enduml

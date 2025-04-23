@@ -4,10 +4,14 @@
 
 package VODF.L1 {
 
-        class SingleOnTime <<metadata>>
-        class TimeSeriesOnTime <<table>>
+        abstract class OnTime
+
+        class SingleOnTime
+        class TimeSeriesOnTime
 
         OnTime <|-- SingleOnTime
         OnTime <|-- TimeSeriesOnTime
+
+        TimeSeriesOnTime o-- "1..*" SingleOnTime
 }
 @enduml

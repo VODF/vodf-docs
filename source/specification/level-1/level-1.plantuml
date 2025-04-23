@@ -43,13 +43,6 @@ package VODF.L1 {
         Observation  "1" -- "0..1" EventList
         Observation  "0..*" *--  "0..1" IRF
 
-
-        ' removed for now: add to separate sub-diagram
-        'OnTime <|-- SingleOnTime
-        'OnTime <|-- TimeSeriesOnTime
-        'EventList "1" -- "0..*" Event
-
-
         IRF "1"  *-- "1..*" IRFComponent
 
 }
