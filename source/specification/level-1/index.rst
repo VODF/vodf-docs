@@ -56,5 +56,38 @@ Data Releases
 TBD
 
 
+EventList
+----------
+
+.. uml:: eventlist.plantuml
+   :caption: VODF **Level-1 EventList** Data Model
+   :width: 30em
+
+IRF
+---
+
+.. uml:: irf.plantuml
+   :caption: VODF **Level-1 IRF** Data Model
+   :width: 40em
+
+
+OnTime
+------
+
+.. uml:: ontime.plantuml
+   :caption: VODF **Level-1 OnTime** Data Model
+   :width: 25em
+
+
+Pointing
+--------
+
+.. uml:: pointing.plantuml
+   :caption: VODF **Level-1 Pointing** Data Model
+   :width: 34em
+
+
+
+
 Data Products
 =============

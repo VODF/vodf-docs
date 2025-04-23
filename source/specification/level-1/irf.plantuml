@@ -1,0 +1,23 @@
+@startuml
+!include common.inc
+
+package VODF.L1 {
+
+        abstract class IRF
+        abstract class IRFComponent
+        class  EffectiveArea <<IRFComponent>>
+        class BackgroundRate <<IRFComponent>>
+        class EnergyMigration <<IRFComponent>>
+        class PSF <<IRFComponent>>
+
+        IRF *-- "1..*" IRFComponent
+
+
+        IRF <|-- StandardIRF
+
+        StandardIRF *-- EffectiveArea
+        StandardIRF *-- BackgroundRate
+        StandardIRF *-- EnergyMigration
+        StandardIRF *-- PSF
+
+}
