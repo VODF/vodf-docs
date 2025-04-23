@@ -1,3 +1,4 @@
+@startuml
 hide circles
 hide methods
 skinparam ClassBackgroundColor white/aliceblue
@@ -10,3 +11,4 @@ package {
         FontColor gray
 }
 </style>
+@enduml

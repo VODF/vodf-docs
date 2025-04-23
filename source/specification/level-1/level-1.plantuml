@@ -1,5 +1,5 @@
 @startuml
-!include common.inc
+!include ../common.inc
 
 package IVOA <<cloud>> {
         class ObsCore {

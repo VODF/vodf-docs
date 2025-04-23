@@ -1,15 +1,5 @@
 @startuml
-hide circles
-hide methods
-skinparam ClassBackgroundColor white/aliceblue
-skinparam ClassHeaderBackgroundColor lightblue
-<style>
-package {
-        LineColor gray
-        FontColor gray
-}
-</style>
-
+!include ../common.inc
 
 VODF.L1.Observation "1..*" -- "1" VODF.L2.DataSetCollection
 
