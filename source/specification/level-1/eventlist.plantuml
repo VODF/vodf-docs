@@ -1,0 +1,26 @@
+@startuml
+!include common.inc
+
+
+package VODF.L1 {
+
+        class EventList
+        class Event {
+                + ra_reco
+                + dec_reco
+                + time_reco
+                + energy_reco
+        }
+
+        class SimulatedEvent {
+                + ra_true
+                + dec_true
+                + time_true
+                + energy_true
+                + particle_type_true
+        }
+
+        EventList "1" o-- "0..*" Event
+        Event -r-|> SimulatedEvent
+}
+@enduml

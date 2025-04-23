@@ -3,10 +3,12 @@
 
 
 package VODF.L1 {
-        class NominalPointing <<metadata>>
-        class TimeSeriesPointing <<table>>
+        class NominalPointing
+        class TimeSeriesPointing
 
         Pointing <|-- NominalPointing
         Pointing <|-- TimeSeriesPointing
+
+        TimeSeriesPointing "1" o-- "1..*" PointingMeasurement
 }
 @enduml
