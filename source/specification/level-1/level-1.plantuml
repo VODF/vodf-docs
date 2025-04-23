@@ -2,9 +2,9 @@
 !include ../common.inc
 
 package IVOA <<cloud>> {
-        class ObsCore {
-
-        }
+        class ObsCore
+        class DataLink
+        ObsCore -l- DataLink
 }
 
 package VODF.L1 {
@@ -29,7 +29,7 @@ package VODF.L1 {
 
         }
 
-        ObsCore -r- Observation : "maps to <"
+        IVOA -- Observation : "maps to <"
 
 
         DataRelease "1..*" -- "1" ObservationCollection
