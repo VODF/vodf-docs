@@ -18,31 +18,32 @@ package VODF {
 
 package VODF.L1 {
 
+        together {
+                class DataRelease  {
+                        + facility: Facility
+                        + data_release_id
+                        ..
+                        ~ time_interval
+                        ~ documentation_url
+                        ..facility-specific properties..
+                        ~ processing_configuration
+                        ~ processing_pipeline_version
+                        ~ ...
+                }
 
-        class DataRelease  {
-                + facility: Facility
-                + data_release_id
-                ..
-                ~ time_interval
-                ~ documentation_url
-                ..facility-specific properties..
-                ~ processing_configuration
-                ~ processing_pipeline_version
-                ~ ...
-        }
+                class Observation #line.bold {
+                        + obs_id
+                        --
+                        ~ primary_particle_id
+                        ~ temporal_coverage
+                        ~ spatial_coverage
+                        ~ energy_coverage
+                        ~ ...
+                }
 
-        class Observation #line.bold {
-                + obs_id
-                --
-                ~ primary_particle_id
-                ~ temporal_coverage
-                ~ spatial_coverage
-                ~ energy_coverage
-                ~ ...
-        }
+                class ObservationCollection {
 
-        class ObservationCollection {
-
+                }
         }
 
         ObsCore .. Observation : "<<find>> >"
