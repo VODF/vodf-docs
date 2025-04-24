@@ -8,24 +8,37 @@ package IVOA <<cloud>> {
         ObsCore -- DataLink
 }
 
+package VODF {
+        class Facility #lightgray
+        class Instrument #lightgray
+        Facility -- Instrument : <<has>> >
+
+}
+
+
 package VODF.L1 {
 
+
         class DataRelease  {
+                + facility: Facility
                 + data_release_id
-                + time_interval
-                + facility
+                ..
+                ~ time_interval
+                ~ documentation_url
                 ..facility-specific properties..
-                + processing_configuration
-                + processing_pipeline_version
-                + ...
+                ~ processing_configuration
+                ~ processing_pipeline_version
+                ~ ...
         }
 
         class Observation #line.bold {
                 + obs_id
                 --
-                + time_interval
-                + spatial_region : SkyRegion
-                + ...
+                ~ primary_particle_id
+                ~ temporal_coverage
+                ~ spatial_coverage
+                ~ energy_coverage
+                ~ ...
         }
 
         class ObservationCollection {
@@ -40,7 +53,8 @@ package VODF.L1 {
         ObservationCollection "1" -- "1..*" Observation
 
         ' Insrument is contextual info, not a part, so only an association.
-        Observation "1" -l- "1" Instrument
+        Observation "1" --l-- "1" Instrument : used >
+        Facility "1" -r-- "*" DataRelease
 
         ' Constituent parts of an observation
         Observation "1" o-- "1" Pointing
