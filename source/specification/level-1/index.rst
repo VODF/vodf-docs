@@ -22,10 +22,8 @@ set of physical estimated parameters per detected particle.
 Data Model
 ==========
 
-
 .. uml:: level-1.plantuml
    :caption: VODF **Level-1** Data Model
-   :width: 600px
 
 Observations
 ------------
@@ -61,14 +59,12 @@ EventList
 
 .. uml:: eventlist.plantuml
    :caption: VODF **Level-1 EventList** Data Model
-   :width: 30em
 
 IRF
 ---
 
 .. uml:: irf.plantuml
    :caption: VODF **Level-1 IRF** Data Model
-   :width: 40em
 
 
 OnTime
@@ -76,7 +72,6 @@ OnTime
 
 .. uml:: ontime.plantuml
    :caption: VODF **Level-1 OnTime** Data Model
-   :width: 25em
 
 
 Pointing
@@ -84,7 +79,6 @@ Pointing
 
 .. uml:: pointing.plantuml
    :caption: VODF **Level-1 Pointing** Data Model
-   :width: 34em
 
 
 

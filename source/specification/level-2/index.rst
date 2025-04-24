@@ -12,4 +12,3 @@ e.g. counts.
 
 .. uml:: level-2.plantuml
    :caption: VODF **Level-2** Data Model
-   :width: 600px

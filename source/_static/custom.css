@@ -11,3 +11,10 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
     --pst-color-primary: #8800ff;
 }
+
+
+/* Ensure the SVG diagrams scale with font size, not diagram width */
+img[src$=".svg"] {
+    max-width: 100%;
+    height: auto;
+}
