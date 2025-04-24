@@ -1,6 +1,6 @@
 @startuml
 !include ../common.inc
-'skinparam linetype ortho
+skinparam linetype ortho
 
 package IVOA <<cloud>> {
         class ObsCore
