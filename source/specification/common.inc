@@ -1,8 +1,6 @@
 @startuml
 hide circles
 hide methods
-skinparam ClassBackgroundColor white-aliceblue
-skinparam backgroundcolor transparent
 skinparam DefaultFontSize 14
 skinparam DefaultFontName "Arial"
 
@@ -14,16 +12,32 @@ package {
         FontColor gray
 }
 
+
+
 class {
-        Header {
+
+        BackgroundColor white-aliceblue
+        header {
                 FontColor #white
                 BackgroundColor #8800ff
-                FontStyle bold
+                 FontStyle bold
         }
+
+}
+
+
+.extern {
+        class {
+                header {
+                        BackgroundColor #gray
+                }
+        }
+
 }
 
 </style>
 
+hide <<extern>> stereotype
 
 
 @enduml
