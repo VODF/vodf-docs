@@ -8,19 +8,17 @@ skinparam DefaultFontName "Arial"
 
 <style>
 package {
-        LineColor gray
-        FontColor gray
+        LineColor #gray
+        FontColor #gray
 }
-
-
 
 class {
 
-        BackgroundColor white-aliceblue
+        backgroundColor white-aliceblue
         header {
-                FontColor #white
-                BackgroundColor #8800ff
-                 FontStyle bold
+                fontColor #ffffff
+                backgroundColor #8800ff
+                fontStyle bold
         }
 
 }
@@ -29,13 +27,15 @@ class {
 .extern {
         class {
                 header {
-                        BackgroundColor #gray
+                        backgroundColor #gray
                 }
         }
 
 }
 
 </style>
+
+skinparam classStereotypeFontColor white
 
 hide <<extern>> stereotype
 
