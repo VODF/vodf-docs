@@ -66,6 +66,51 @@ IRF
 .. uml:: irf.plantuml
    :caption: VODF **Level-1 IRF** Data Model
 
+The :term:`IRF` contains the information necessary to map instrumental
+:term:`reconstructed` parameters of the event to *physical* parameters, i.e. it
+allows one to transform from a physical *flux* in a given space-time-spectral
+interval into a predicted number of detected *counts* for a given instrument.
+
+.. tip::
+
+   Science analysis with event-counting instruments often involves fitting a
+   physical model to observed data. The standard technique is a *maximum
+   likelihood fit* using *forward folding*, where the physical model is passed
+   through the IRF to transform flux (physical units) into predicted counts
+   (instrumental units), and the fit is performed on this transformed quantity
+   by comparing the predicted to measured counts. The opposite process,
+   *unfolding*, where instrumental uncertainties are removed by deconvolution
+   and the model is fit in physical units gives very unstable results when data
+   are noisy and contain background events.
+
+
+
+StandardIRF
+~~~~~~~~~~~
+
+In current instruments, the :term:`IRF` is typically decomposed into the
+following components, which each provide a value as a function of a given point
+in true (physical) coordinates, i.e. the spatial position in the FOV, time,
+energy, or instrumental coordinates like zenith angle, azimuth, event
+reconstruction type, etc.
+
+Effective Collection Area (``EffectiveArea``)
+    Blah.
+
+Point-Spread Function (``PSF``)
+    Blah.
+
+Energy Migration Matrix (``EnergyMigration``)
+    Blah.
+
+Background Rate (``BackgroundRate``)
+    The expected rate of background events (in counts/second). Often, the real
+    rate is difficult to compute correctly without real data due to e.g.
+    atmospheric uncertainties, and therefore it is important to note that it may
+    need to be calibrated using real data. I.e. the shape should be correct, but
+    the normalization may need to be refined.
+
+
 
 OnTime
 ------
