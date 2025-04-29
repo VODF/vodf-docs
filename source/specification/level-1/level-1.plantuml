@@ -46,11 +46,10 @@ package VODF.L1 {
                 }
         }
 
-        ObsCore .. Observation : "<<find>> >"
-        DataLink .. Observation : "<<access>> >"
+        ObsCore .r. Observation : "<<find>> >"
+        DataLink .r. Observation : "<<access>> >"
 
-
-        DataRelease "1..*" -- "1" ObservationCollection
+        DataRelease "1" -- "1..*" ObservationCollection
         ObservationCollection "1" -- "1..*" Observation
 
         ' Insrument is contextual info, not a part, so only an association.
