@@ -9,12 +9,12 @@ of those events map to physical quantities. This data level may contain extra in
 the instrument pointing, provenance information, :term:`stable time intervals or instrumental good time intervals<SOI>`, systematics error or quality estimation of the :term:`IRF`. It also covers related information
 such as time-series tables of data quality, instrumental or atmospheric conditions.
 
-Level-1 data is assumed to be already *pre-processed* by the instrument that
-produces it. The pre-processing must include all calibration and
+Level-1 data products are assumed to be already *pre-processed* by the instrument that
+produces them. The pre-processing must include all calibration and
 :term:`reconstruction` necessary to reduce the raw data of the instrument into a
 set of physical estimated parameters per detected particle.
 
-.. note:: VODF Level-1 is equivalent to *data level 3 (DL3)* defined by CTAO,
+.. tip:: VODF Level-1 is equivalent to *data level 3 (DL3)* defined by CTAO,
           also called "science-ready data". In CTAO, levels DL0-DL2 constitute
           the *raw* and *pre-processed* data levels that are out of scope for
           VODF.
@@ -54,6 +54,12 @@ Data Releases
 TBD
 
 
+Coverage
+--------
+
+.. uml:: coverage.plantuml
+   :caption: VODF **Level-1 Coverage** Data Model
+
 EventList
 ----------
 
@@ -67,9 +73,11 @@ IRF
    :caption: VODF **Level-1 IRF** Data Model
 
 The :term:`IRF` contains the information necessary to map instrumental
-:term:`reconstructed` parameters of the event to *physical* parameters, i.e. it
-allows one to transform from a physical *flux* in a given space-time-spectral
-interval into a predicted number of detected *counts* for a given instrument.
+:term:`reconstructed <reconstruction>` parameters of the event to *physical*
+parameters, i.e. it allows one to transform from a physical *flux* in a given
+space-time-spectral interval into a predicted number of detected *counts* for a
+given instrument.
+
 
 .. tip::
 
@@ -80,30 +88,35 @@ interval into a predicted number of detected *counts* for a given instrument.
    (instrumental units), and the fit is performed on this transformed quantity
    by comparing the predicted to measured counts. The opposite process,
    *unfolding*, where instrumental uncertainties are removed by deconvolution
-   and the model is fit in physical units gives very unstable results when data
-   are noisy and contain background events.
-
+   and the model is fit in physical units gives unstable results when data (or
+   the IRFs the are noisy.
 
 
 StandardIRF
 ~~~~~~~~~~~
 
 In current instruments, the :term:`IRF` is typically decomposed into the
-following components, which each provide a value as a function of a given point
-in true (physical) coordinates, i.e. the spatial position in the FOV, time,
-energy, or instrumental coordinates like zenith angle, azimuth, event
-reconstruction type, etc.
+following components:
 
-Effective Collection Area (``EffectiveArea``)
-    Blah.
+.. math::
+
+    R(E', {\vec{p'}} | E, \vec{p}, t) =
+    \underbrace{A_\text{eff}(E, \vec{p}, t)}_{{\text{Effective Area}}}
+    \cdot \overbrace{M(E' | E, \vec{p}, t)}^{{\text{Energy Migration}}}
+    \cdot \underbrace{\mathrm{PSF}(\vec{p'} | E, \vec{p}, t)}_{{\text{Point Spread Function}}}.
+
+
+Effective Collection Area Function (``EffectiveArea``)
+    Given a set of physical parameters, provides the collection area of the
+    instrument, computed usually from detailed simulations.
 
 Point-Spread Function (``PSF``)
     Blah.
 
-Energy Migration Matrix (``EnergyMigration``)
+Energy Migration Function (``EnergyMigration``)
     Blah.
 
-Background Rate (``BackgroundRate``)
+Background Rate Function (``BackgroundRate``)
     The expected rate of background events (in counts/second). Often, the real
     rate is difficult to compute correctly without real data due to e.g.
     atmospheric uncertainties, and therefore it is important to note that it may

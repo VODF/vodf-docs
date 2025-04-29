@@ -1,0 +1,38 @@
+@startuml
+!include ../common.inc
+skinparam linetype ortho
+
+package IVOA <<cloud>> {
+        class TMOC
+}
+
+package VODF {
+        package L1 {
+                class SpatialCoverage {
+                        + r_fov : float
+                        ..optional..
+                        + region : Region
+                }
+
+                class TemporalCoverage {
+                        + t_start
+                        + t_stop
+                }
+
+                class SpectralCoverage {
+                        + energy_min
+                        + energy_max
+                }
+
+                Coverage *-- SpatialCoverage
+                Coverage *-- TemporalCoverage
+                Coverage *-- SpectralCoverage
+                TemporalCoverage -- IVOA.TMOC
+                SpatialCoverage -- IVOA.TMOC
+
+                TemporalCoverage ..> OnTime
+                TemporalCoverage ..> Pointing
+        }
+}
+
+@enduml

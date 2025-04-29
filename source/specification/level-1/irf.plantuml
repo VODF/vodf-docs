@@ -16,8 +16,8 @@ package VODF.L1 {
         IRF <|-- StandardIRF
 
         StandardIRF *-- EffectiveArea
-        StandardIRF *-- BackgroundRate
+        StandardIRF *-- "0..1" BackgroundRate
         StandardIRF *-- EnergyMigration
-        StandardIRF *-- PSF
+        StandardIRF *-- "0..1" PSF
 
 }
