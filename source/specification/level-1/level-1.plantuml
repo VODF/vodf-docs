@@ -3,14 +3,14 @@
 skinparam linetype ortho
 
 package IVOA <<cloud>> {
-        class ObsCore
-        class DataLink
+        class ObsCore #gray
+        class DataLink #gray
         ObsCore -- DataLink
 }
 
 package VODF {
-        class Facility #lightgray
-        class Instrument #lightgray
+        class Facility #gray
+        class Instrument #gray
         Facility -- Instrument : <<has>> >
 
 }
