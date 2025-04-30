@@ -34,7 +34,7 @@ package VODF.L1 {
                         + obs_id
                         --
                         ~ coverage: Coverage
-                        ~ primary_particle_id: ParticleID
+                        ~ primary_particle_id: PDGID
                         ~ ...
                 }
 

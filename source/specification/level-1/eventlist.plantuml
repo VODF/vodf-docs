@@ -26,7 +26,7 @@ package VODF.L1 {
                 + az_true: float32
                 + energy_true: float32
                 + time_true: TimeStamp
-                + particle_id_true : ParticleID
+                + particle_id_true : PDGID
                 ..optional..
                 + ra_true: float32
                 + dec_true: float32
