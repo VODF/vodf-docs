@@ -89,7 +89,7 @@ html_theme_options = {
     "footer_center": ["last-updated"],
     "footer_end": ["sphinx-version", "theme-version"],
     "logo": {
-        "text":"VODF: Very-High-Energy Open Data Format",
+        "alt_text":"VODF: Very-High-Energy Open Data Format",
         "image_light": "source/_static/VODF-logo.png",
         "image_dark": "source/_static/VODF-logo.png",
     },
