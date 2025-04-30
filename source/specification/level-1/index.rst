@@ -118,29 +118,29 @@ following components:
     R(E', {\vec{p'}} | E, \vec{p}, t) =
     \underbrace{A_\text{eff}(E, \vec{p}, t)}_{{\text{Effective Area}}}
     \cdot \overbrace{M(E' | E, \vec{p}, t)}^{{\text{Energy Migration}}}
-    \cdot \underbrace{\mathrm{PSF}(\vec{p'} | E, \vec{p}, t)}_{{\text{Point Spread Function}}}.
+    \cdot \underbrace{P(\vec{p'} | E, \vec{p}, t)}_{{\text{Point Spread Function}}}.
 
 
-Effective Collection Area Function (``EffectiveArea``)
+Effective Collection Area Function (:math:`A_\mathrm{eff}`, ``EffectiveArea``)
     Given a set of physical parameters, provides the collection area of the
     instrument, computed usually from detailed simulations as the ratio of the
     number of detected events to the total simulated multiplied by the area over
     which they were simulated, for given true position in the field of view and
     true energy.
 
-Point-Spread Function (``PSF``)
+Point-Spread Function (:math:`P`, ``PSF``)
     The probability to reconstruct an event a point :math:`\vec p'` in the FOV
     if it had a true position :math:`\vec p`. Positional bias is ignored,
     therefore it represents only the dispersion, i.e. the mean reconstructed
     position is assumed equal to the true position.
 
-Energy Migration Function (``EnergyMigration``)
+Energy Migration Function (:math:`M`, ``EnergyMigration``)
     The probability to reconstruct the energy as :math:`E'` for a given true
     energy :math:`E`, including both dispersion and bias. This sometimes called
     the *energy redistribution matrix*, or the *redistribution matrix file
     (RMF)*.
 
-Background Rate Function (``BackgroundRate``)
+Background Rate Function (:math:`B`, ``BackgroundRate``)
     The expected rate of background events (in counts/second) at a given point
     :math:`\vec p` and energy `E`. Often, the real rate is difficult to compute
     correctly without real data due to e.g. atmospheric uncertainties, and
