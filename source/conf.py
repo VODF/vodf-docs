@@ -72,11 +72,8 @@ if not version_match or version_match.isdigit():
         version_match = "v" + release
 
 html_theme_options = {
-    # "logo_link": "",
     "github_url": "https://github.com/vodf/vodf-docs",
     "icon_links_label": "Quick Links",
-    # "show_nav_level": 4,
-    # "navigation_depth": 4,
     "use_edit_page_button": True,
     "navbar_align": "content",
     "navbar_end": ["version-switcher", "navbar-icon-links"],  # "theme-switcher"
@@ -92,6 +89,7 @@ html_theme_options = {
     "footer_center": ["last-updated"],
     "footer_end": ["sphinx-version", "theme-version"],
     "logo": {
+        "text":"VODF: Very-High-Energy Open Data Format",
         "image_light": "source/_static/VODF-logo.png",
         "image_dark": "source/_static/VODF-logo.png",
     },
