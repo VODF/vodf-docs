@@ -92,8 +92,8 @@ stable, and residual variations are handled by adding instrumental parameters.
    (instrumental units), and the fit is performed on this transformed quantity
    by comparing the predicted to measured counts. The opposite process,
    *unfolding*, where instrumental uncertainties are removed by deconvolution
-   and the model is fit in physical units gives unstable results when data (or
-   the IRFs the are noisy.
+   and the model is fit in physical units gives unstable results when data or
+   IRFs contain instrumental or statistical noise.
 
 
 StandardIRF
