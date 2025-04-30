@@ -3,7 +3,7 @@
 =========
 
 VODF Level-1 contains data products related to specific
-:term:`observations<observation>`, and in particular to :term:`events<event>` detected
+:term:`observations <observation>`, and in particular to :term:`events<event>` detected
 by a given instrument as well as :term:`IRF` that describe how the parameters
 of those events map to physical quantities. This data level may contain extra information on
 the instrument pointing, provenance information, :term:`stable time intervals or instrumental good time intervals<SOI>`, systematics error or quality estimation of the :term:`IRF`. It also covers related information
@@ -39,7 +39,7 @@ are not purely hardware, but a combination of hardware and software, and the
 details of the *low-level data processing changes the characteristics of the
 instrument*. With improvements to this low-level processing, the sensitivity,
 angular resolution, energy resolution, and other factors can change. A second
-consequence of :term:`observations<observation>` being software-defined is that the
+consequence of :term:`observations <observation>` being software-defined is that the
 minimal duration is therefore up to the observatory. It can be directly related
 to one *data acquisition interval*, but can also be a subset or concatenation of
 many.
@@ -80,7 +80,7 @@ given instrument. The IRF is often decomposed into a set of independent
 ``IRFComponents``, e.g. by separating spatial and spectral aspects. An IRF may
 also vary in time, due to changing observation conditions, or instrumental
 degradation. The assumption in VODF is that time variations are ignored and
-therefore an :term :`observation` is broken into pieces where the IRF remains
+therefore an :term:`observation` is broken into pieces where the IRF remains
 stable, and residual variations are handled by adding instrumental parameters.
 
 .. tip::
