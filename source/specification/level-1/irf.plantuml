@@ -10,13 +10,12 @@ package VODF.L1 {
         class EnergyMigration <<IRFComponent>>
         class PSF <<IRFComponent>>
 
-        IRF *-- "0..*" IRFComponent
+        IRF *-d- "0..*" IRFComponent
+        IRF <|-r---- StandardIRF
 
-        IRF <|-- StandardIRF
-
-        StandardIRF *-- EffectiveArea
-        StandardIRF *-- BackgroundRate
-        StandardIRF *-- EnergyMigration
-        StandardIRF *-- PSF
+        StandardIRF *--- EffectiveArea
+        StandardIRF *--- BackgroundRate
+        StandardIRF *--- EnergyMigration
+        StandardIRF *--- PSF
 
 }
