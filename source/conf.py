@@ -36,6 +36,7 @@ release = "0.1"
 extensions = [
     "sphinxcontrib.plantuml",
     "sphinx.ext.mathjax",
+    "sphinx.ext.todo",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -110,6 +111,8 @@ html_logo = "_static/VODF-logo.svg"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
+# Show TODO entries. Disable this before release
+todo_include_todos = True
 
 # ======================================================================
 # Options for LaTeX docment output

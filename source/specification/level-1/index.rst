@@ -76,8 +76,12 @@ The :term:`IRF` contains the information necessary to map instrumental
 :term:`reconstructed <reconstruction>` parameters of the event to *physical*
 parameters, i.e. it allows one to transform from a physical *flux* in a given
 space-time-spectral interval into a predicted number of detected *counts* for a
-given instrument.
-
+given instrument. The IRF is often decomposed into a set of independent
+``IRFComponents``, e.g. by separating spatial and spectral aspects. An IRF may
+also vary in time, due to changing observation conditions, or instrumental
+degradation. The assumption in VODF is that time variations are ignored and
+therefore an :term :`observation` is broken into pieces where the IRF remains
+stable, and residual variations are handled by adding instrumental parameters.
 
 .. tip::
 
@@ -95,7 +99,7 @@ given instrument.
 StandardIRF
 ~~~~~~~~~~~
 
-For VODF, we define a commonly used definition of the :term:`IRF`, which
+For VODF, we provide a commonly used decomposition of the :term:`IRF` that
 separates the response :math:`\hat R` from the background rate :math:`B`. This
 is convenient since :math:`\hat R` is usually computed from simulations, while
 :math:`B` can be computed from observed data using blank fields. Then, the
@@ -153,6 +157,12 @@ Background Rate Function (:math:`B`, ``BackgroundRate``)
    This decomposition ignores cross-terms, like the correlation between spectral
    and spatial resolution, which can be important in some cases. Future versions
    of VODF may include more detailed decompositions.
+
+
+.. todo::
+
+   Discuss event types here?
+
 
 OnTime
 ------
