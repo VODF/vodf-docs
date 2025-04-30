@@ -1,0 +1,17 @@
+@startuml
+!include ../common.inc
+
+
+package VODF.L1 {
+
+        abstract class OnTime
+
+        class SingleOnTime
+        class TimeSeriesOnTime
+
+        OnTime <|-- SingleOnTime
+        OnTime <|-- TimeSeriesOnTime
+
+        TimeSeriesOnTime o-- "1..*" SingleOnTime
+}
+@enduml

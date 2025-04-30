@@ -1,0 +1,38 @@
+@startuml
+!include ../common.inc
+
+
+package VODF.L1 {
+
+        class EventList {
+                + collection_id
+                + obs_id
+        }
+        class Event {
+                + event_id: int64
+                --
+                + ra_reco: float32
+                + dec_reco: float32
+                + time_reco: TimeStamp
+                + energy_reco: float32
+                ..optional..
+                + event_type: int
+                + alt_reco: float32
+                + az_reco: float32
+        }
+
+        class SimulatedEvent {
+                + alt_true: float32
+                + az_true: float32
+                + energy_true: float32
+                + time_true: TimeStamp
+                + particle_id_true : PDGID
+                ..optional..
+                + ra_true: float32
+                + dec_true: float32
+        }
+
+        EventList "1" o-- "0..*" Event
+        Event -r-|> SimulatedEvent
+}
+@enduml

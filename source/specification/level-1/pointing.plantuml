@@ -1,0 +1,20 @@
+@startuml
+!include ../common.inc
+
+
+package VODF.L1 {
+        abstract class Pointing
+
+        class SinglePointing
+        class TimeSeriesPointing
+
+        Pointing <|-- SinglePointing
+
+        Pointing <|-- TimeSeriesPointing
+        TimeSeriesPointing "1" o-- "1..*" SinglePointing
+
+        SinglePointing <|-- HorizontalSinglePointing
+        SinglePointing <|-- CelestialSinglePointing
+
+}
+@enduml

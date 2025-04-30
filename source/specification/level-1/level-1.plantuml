@@ -1,60 +1,66 @@
 @startuml
-hide circles
-hide methods
-skinparam ClassBackgroundColor white/aliceblue
-skinparam ClassHeaderBackgroundColor lightblue
-skinparam backgroundcolor transparent
+!include ../common.inc
+skinparam linetype ortho
 
-<style>
-package {
-        LineColor gray
-        FontColor gray
+package IVOA <<cloud>> {
+        class ObsCore <<extern>> {}
+        class DataLink <<extern>> {}
+        ObsCore -- DataLink
 }
-</style>
 
-package IVOA {
-        class ObsCore {
-
-        }
+package VODF {
+        class Facility
+        class Instrument
+        Facility -- Instrument : <<has>> >
 }
+
 
 package VODF.L1 {
 
-        class DataRelease  {
-                + data_release_id
-                + time_interval
-                + facility
-                + processing_configuration
-                + processing_pipeline_version
+        together {
+                class DataRelease  {
+                        + facility: Facility
+                        + data_release_id
+                        ..
+                        ~ time_interval
+                        ~ documentation_url
+                        ..facility-specific properties..
+                        ~ processing_configuration
+                        ~ processing_pipeline_version
+                        ~ ...
+                }
+
+                class Observation #line.bold {
+                        + obs_id
+                        --
+                        ~ coverage: Coverage
+                        ~ primary_particle_id: PDGID
+                        ~ ...
+                }
+
+                class ObservationCollection {
+
+                }
         }
 
-        class Observation #line.bold {
-                + obs_id
-                + time_interval
-                + spatial_region : SkyRegion
-                + instrument_name
-                + ...
-        }
+        ObsCore .r. Observation : "<<find>> >"
+        DataLink .r. Observation : "<<access>> >"
 
-        Observation "1" -- "0..1" Pointing
-
-        Pointing <|-- NominalPointing
-        Pointing <|-- TimeSeriesPointing
-
-        DataRelease "1..*" -- "1" ObservationCollection
+        DataRelease "1" -- "1..*" ObservationCollection
         ObservationCollection "1" -- "1..*" Observation
 
-        ObsCore -r- Observation : "maps to <"
+        ' Insrument is contextual info, not a part, so only an association.
+        Observation "1" --l-- "1" Instrument : used >
+        Facility "1" -r-- "*" DataRelease
 
-        Observation  "1" -- "0..1" EventList
-        Observation  "0..*" *--  "0..1" IRF
-        Observation "1" --  "1..*" OnTime
-        OnTime <|-- SingleOnTime
-        OnTime <|-- TimeSeriesOnTime
 
-        EventList "1" -- "0..*" Event
 
-        Event "properties" -- "dimensions" IRFComponent
+        ' Constituent parts of an observation
+        Observation "1" o-- "1" Pointing
+        Observation "1" o--  "1..*" OnTime
+
+        Observation  "1" o-- "0..1" EventList
+        Observation  "0..*" o--  "0..1" IRF
 
         IRF "1"  *-- "1..*" IRFComponent
 

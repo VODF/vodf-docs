@@ -35,6 +35,8 @@ release = "0.1"
 # ones.
 extensions = [
     "sphinxcontrib.plantuml",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.todo",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,11 +72,8 @@ if not version_match or version_match.isdigit():
         version_match = "v" + release
 
 html_theme_options = {
-    # "logo_link": "",
     "github_url": "https://github.com/vodf/vodf-docs",
     "icon_links_label": "Quick Links",
-    # "show_nav_level": 4,
-    # "navigation_depth": 4,
     "use_edit_page_button": True,
     "navbar_align": "content",
     "navbar_end": ["version-switcher", "navbar-icon-links"],  # "theme-switcher"
@@ -84,9 +83,16 @@ html_theme_options = {
     },
     "header_links_before_dropdown": 6,
     "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
-    "footer_start": ["copyright",],
+    "footer_start": [
+        "copyright",
+    ],
     "footer_center": ["last-updated"],
     "footer_end": ["sphinx-version", "theme-version"],
+    "logo": {
+        "alt_text":"VODF: Very-High-Energy Open Data Format",
+        "image_light": "source/_static/VODF-logo.png",
+        "image_dark": "source/_static/VODF-logo.png",
+    },
 }
 
 html_context = {
@@ -101,7 +107,6 @@ html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
 ]
-html_logo = "_static/VODF-logo.svg"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -109,6 +114,8 @@ html_logo = "_static/VODF-logo.svg"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
+# Show TODO entries. Disable this before release
+todo_include_todos = True
 
 # ======================================================================
 # Options for LaTeX docment output
