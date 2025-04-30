@@ -3,7 +3,10 @@
 skinparam linetype ortho
 
 package IVOA <<cloud>> {
+
+        class SMOC
         class TMOC
+        class STMOC
 }
 
 package VODF {
@@ -27,9 +30,14 @@ package VODF {
                 Coverage *-- SpatialCoverage
                 Coverage *-- TemporalCoverage
                 Coverage *-- SpectralCoverage
-                TemporalCoverage -- IVOA.TMOC
-                SpatialCoverage -- IVOA.TMOC
+                TemporalCoverage *-d--- "0..1" IVOA.TMOC
+                TemporalCoverage *-d--- "0..1" IVOA.STMOC
+                SpatialCoverage *-d--- "0..1" IVOA.SMOC
+                SpatialCoverage *-d--- "0..1" IVOA.STMOC
 
+
+                class OnTime <<extern>>
+                class Pointing <<extern>>
                 TemporalCoverage ..> OnTime
                 TemporalCoverage ..> Pointing
         }
