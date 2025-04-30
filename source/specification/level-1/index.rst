@@ -108,7 +108,7 @@ predicted instrumental counts :math:`N` can be computed for a given flux
 
 .. math::
 
-   N(\vec{p}', E' | \vec{p}, E) = \int d\Omega dE \;  \hat{R}(\vec{p}',E'|\vec{p},E) \, F(\vec{p}, E)  +  \int d\Omega dE \; B(\vec{p}', E')
+   \underbrace{N(\vec{p}', E' | \vec{p}, E)}_{Instrumental\ Counts} = \int d\Omega dE \;  \hat{R}(\vec{p}',E'|\vec{p},E) \, \underbrace{F(\vec{p}, E)}_{Source\ Model}  +  \int d\Omega dE \; B(\vec{p}', E')
 
 where :math:`(\vec{p}, E)` are the *true* primary particle point of origin and
 its energy, and :math:`(\vec{p}',E')` are the corresponding :term:`reconstructed

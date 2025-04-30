@@ -86,9 +86,15 @@ html_theme_options = {
     },
     "header_links_before_dropdown": 6,
     "announcement": "<p>This is an unreleased version, informaton may not be correct</p>",
-    "footer_start": ["copyright",],
+    "footer_start": [
+        "copyright",
+    ],
     "footer_center": ["last-updated"],
     "footer_end": ["sphinx-version", "theme-version"],
+    "logo": {
+        "image_light": "source/_static/VODF-logo.png",
+        "image_dark": "source/_static/VODF-logo.png",
+    },
 }
 
 html_context = {
@@ -103,7 +109,6 @@ html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
 ]
-html_logo = "_static/VODF-logo.svg"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
