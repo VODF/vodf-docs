@@ -95,7 +95,22 @@ given instrument.
 StandardIRF
 ~~~~~~~~~~~
 
-In current instruments, the :term:`IRF` is typically decomposed into the
+For VODF, we define a commonly used definition of the :term:`IRF`, which
+separates the response :math:`\hat R` from the background rate :math:`B`. This
+is convenient since :math:`\hat R` is usually computed from simulations, while
+:math:`B` can be computed from observed data using blank fields. Then, the
+predicted instrumental counts :math:`N` can be computed for a given flux
+:math:`F` as:
+
+.. math::
+
+   N(\vec{p}', E' | \vec{p}, E) = \int d\Omega dE \;  \hat{R}(\vec{p}',E'|\vec{p},E) \, F(\vec{p}, E)  +  \int d\Omega dE \; B(\vec{p}', E')
+
+where :math:`(\vec{p}, E)` are the *true* primary particle point of origin and
+its energy, and :math:`(\vec{p}',E')` are the corresponding :term:`reconstructed
+<reconstruction>` quantities. The coordinate system for :math:`\vec p` is
+usually represented in polar coordinates relative to the FOV center, though
+other representations are possible. Then, we decompose :math:`R` into the
 following components:
 
 .. math::
@@ -108,22 +123,36 @@ following components:
 
 Effective Collection Area Function (``EffectiveArea``)
     Given a set of physical parameters, provides the collection area of the
-    instrument, computed usually from detailed simulations.
+    instrument, computed usually from detailed simulations as the ratio of the
+    number of detected events to the total simulated multiplied by the area over
+    which they were simulated, for given true position in the field of view and
+    true energy.
 
 Point-Spread Function (``PSF``)
-    Blah.
+    The probability to reconstruct an event a point :math:`\vec p'` in the FOV
+    if it had a true position :math:`\vec p`. Positional bias is ignored,
+    therefore it represents only the dispersion, i.e. the mean reconstructed
+    position is assumed equal to the true position.
 
 Energy Migration Function (``EnergyMigration``)
-    Blah.
+    The probability to reconstruct the energy as :math:`E'` for a given true
+    energy :math:`E`, including both dispersion and bias. This sometimes called
+    the *energy redistribution matrix*, or the *redistribution matrix file
+    (RMF)*.
 
 Background Rate Function (``BackgroundRate``)
-    The expected rate of background events (in counts/second). Often, the real
-    rate is difficult to compute correctly without real data due to e.g.
-    atmospheric uncertainties, and therefore it is important to note that it may
-    need to be calibrated using real data. I.e. the shape should be correct, but
-    the normalization may need to be refined.
+    The expected rate of background events (in counts/second) at a given point
+    :math:`\vec p` and energy `E`. Often, the real rate is difficult to compute
+    correctly without real data due to e.g. atmospheric uncertainties, and
+    therefore it is important to note that it may need to be calibrated using
+    real data. I.e. the shape should be correct, but the normalization may need
+    to be refined.
 
+.. note::
 
+   This decomposition ignores cross-terms, like the correlation between spectral
+   and spatial resolution, which can be important in some cases. Future versions
+   of VODF may include more detailed decompositions.
 
 OnTime
 ------
